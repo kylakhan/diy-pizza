@@ -1,0 +1,77 @@
+{
+  "menu": {
+    "pizza": {
+      "sizes": {
+        "small": {
+          "price": 8,
+          "maxToppings": 5
+        },
+        "medium": {
+          "price": 10,
+          "maxToppings": 7
+        },
+        "large": {
+          "price": 12,
+          "maxToppings": 9
+        }
+      },
+      "crusts": {
+        "thin": {
+          "price": 2
+        },
+        "thick": {
+          "price": 4
+        }
+      },
+      "toppings": {
+        "InExcess": {
+          "price": 0.5,
+          "number": 3
+        },
+        "types": [
+          {
+            "name": "pepperoni",
+            "image": null
+          },
+          {
+            "name": "mushrooms",
+            "image": null
+          },
+          {
+            "name": "onions",
+            "image": null
+          },
+          {
+            "name": "sausage",
+            "image": null
+          },
+          {
+            "name": "bacon",
+            "image": null
+          },
+          {
+            "name": "extra cheese",
+            "image": null
+          },
+          {
+            "name": "black olives",
+            "image": null
+          },
+          {
+            "name": "green peppers",
+            "image": null
+          },
+          {
+            "name": "pineapple",
+            "image": null
+          },
+          {
+            "name": "spinach",
+            "image": null
+          }
+        ]
+      }
+    }
+  },
+  "currency": "USD"
+}
