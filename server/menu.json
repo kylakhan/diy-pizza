@@ -3,75 +3,75 @@
     "pizza": {
       "sizes": {
         "small": {
-          "price": 8,
+          "cost": 8,
           "maxToppings": 5
         },
         "medium": {
-          "price": 10,
+          "cost": 10,
           "maxToppings": 7
         },
         "large": {
-          "price": 12,
+          "cost": 12,
           "maxToppings": 9
         }
       },
       "crusts": {
         "thin": {
-          "price": 2
+          "cost": 2
         },
         "thick": {
-          "price": 4
+          "cost": 4
         }
       },
       "toppings": {
-        "InExcess": {
-          "price": 0.5,
+        "inExcess": {
+          "cost": 0.5,
           "number": 3
         },
         "types": [
           {
             "name": "pepperoni",
-            "image": null
+            "image": "https://img.icons8.com/color/48/000000/salami.png"
           },
           {
             "name": "mushrooms",
-            "image": null
+            "image": "https://img.icons8.com/cotton/64/000000/mushroom.png"
           },
           {
             "name": "onions",
-            "image": null
+            "image": "https://img.icons8.com/cotton/64/000000/onion--v1.png"
           },
           {
             "name": "sausage",
-            "image": null
+            "image": "https://img.icons8.com/cotton/64/000000/sausage--v1.png"
           },
           {
             "name": "bacon",
-            "image": null
+            "image": "https://img.icons8.com/cotton/64/000000/bacon.png"
           },
           {
             "name": "extra cheese",
-            "image": null
+            "image": "https://img.icons8.com/cotton/64/000000/cheese.png"
           },
           {
             "name": "black olives",
-            "image": null
+            "image": "https://img.icons8.com/ios-filled/100/000000/olive.png"
           },
           {
             "name": "green peppers",
-            "image": null
+            "image": "https://img.icons8.com/cotton/64/000000/yellow-paprika-1.png"
           },
           {
             "name": "pineapple",
-            "image": null
+            "image": "https://img.icons8.com/plasticine/100/000000/pineapple.png"
           },
           {
             "name": "spinach",
-            "image": null
+            "image": "https://img.icons8.com/doodle/48/000000/spinach.png"
           }
         ]
       }
     }
   },
-  "currency": "USD"
+  "currency": "$"
 }

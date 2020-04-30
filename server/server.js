@@ -4,29 +4,33 @@ const fs = require('fs')
 const app = express();
 const port = process.env.PORT || 3001;
 
+
 const DATA_PATH = path.join(path.dirname(__filename), 'menu.json')
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
 
-const read_file = () => {
-  const data = fs.readFileSync(DATA_PATH)
-  return JSON.parse(data)['menu']['pizza']
+const readFile = () => {
+    const data = fs.readFileSync(DATA_PATH)
+    return JSON.parse(data)
 }
 
 app.get('/pizza', (req, res) => {
-  const data = read_file()
-  res.send(data);
+    const data = readFile()
+    res.send(data);
 });
 
 app.get('/pizza/sizes', (req, res) => {
-  console.log(read_file()['sizes'])
-  res.send(read_file()['sizes']);
+    res.send(readFile()['menu']['pizza']['sizes']);
 });
 
 app.get('/pizza/crusts', (req, res) => {
-  res.send(read_file()['crusts']);
+    res.send(readFile()['menu']['pizza']['crusts']);
 });
 
 app.get('/pizza/toppings', (req, res) => {
-  res.send(read_file()['toppings']);
+    res.send(readFile()['menu']['pizza']['toppings']);
+});
+
+app.get('/currency', (req, res) => {
+    res.send({'currency': readFile()['currency']});
 });
